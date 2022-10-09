@@ -1,4 +1,4 @@
-var aboutMessage = 'Issue Tracker API v1.0';
+var aboutMessage = 'Issue Tracker API v1.1';
 function setMessage(_, _a) {
     var message = _a.message;
     aboutMessage = message;

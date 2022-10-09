@@ -1,4 +1,4 @@
-let aboutMessage = 'Issue Tracker API v1.0';
+let aboutMessage = 'Issue Tracker API v1.1';
 
 function setMessage(_, { message }):string {
 	aboutMessage = message;
