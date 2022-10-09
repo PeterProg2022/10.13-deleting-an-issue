@@ -4,10 +4,10 @@
   "description": "Pro MERN Stack (2nd Edition) API",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -e js,graphql -w . -w .env api/server.js",
+    "dev": "nodemon -e js,graphql -w . -w .env api/server.js",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo '===== build =====' ; npx tsc"
+    "build": "echo 'no build needed'"
   },
   "repository": {
     "type": "git",
@@ -17,25 +17,25 @@
   "license": "ISC",
   "homepage": "https://github.com/vasansr/pro-mern-stack-2",
   "dependencies": {
-    "apollo-server-express": "^2.3.1",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
+    "apollo-server-express": "^2.3.1",
     "graphql": "^0.13.2",
-    "mongodb": "^4.10.0",
-    "nodemon": "^1.18.9",
-    "typescript": "^4.8.4"
+    "mongodb": "^4.10.0"
   },
   "devDependencies": {
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4",
     "@tsconfig/node18": "^1.0.1",
     "@types/mocha": "^10.0.0",
     "@types/mongodb": "^4.0.7",
     "@types/node": "^18.8.3",
-    "@typescript-eslint/eslint-plugin": "^5.39.0",
-    "@typescript-eslint/parser": "^5.39.0",
     "eslint": "8.22.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-mocha": "^10.1.0"
+    "eslint-plugin-mocha": "^10.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0"
   }
 }
