@@ -3,9 +3,9 @@ require('dotenv').config();
 const { ApolloServer } = require('apollo-server-express');
 
 const path = require('path');
-const GraphQLDate = require('./graphql_date');
-const about = require('../api/about');
-const issue = require('./issue');
+const GraphQLDate = require('./sub/graphql_date');
+const about = require('../sub/about');
+const issue = require('./sub/issue');
 
 const resolvers = {
   Query: {

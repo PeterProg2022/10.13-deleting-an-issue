@@ -2,9 +2,9 @@ var fs = require('fs');
 require('dotenv').config();
 var ApolloServer = require('apollo-server-express').ApolloServer;
 var path = require('path');
-var GraphQLDate = require('./graphql_date');
-var about = require('../api/about');
-var issue = require('./issue');
+var GraphQLDate = require('./sub/graphql_date');
+var about = require('../sub/about');
+var issue = require('./sub/issue');
 var resolvers = {
     Query: {
         about: about.getMessage,
