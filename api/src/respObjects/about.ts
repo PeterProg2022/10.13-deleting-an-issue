@@ -1,4 +1,4 @@
-let aboutMessage = 'Issue Tracker API v1.2';
+let aboutMessage = 'Issue Tracker API v1.3';
 
 // @ts-ignore
 function setMessage(_, { message }):string {
