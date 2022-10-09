@@ -1,9 +1,9 @@
-node_modules
-package-lock.json
+**/node_modules
+**/package-lock.json
+**/.idea
+**/.env
+api/api
+ui/dist
 ui/public/*.js
 !ui/public/env.js
 ui/public/*.map
-.env
-ui/dist
-.idea
-api/api
