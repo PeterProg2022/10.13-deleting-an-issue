@@ -2,7 +2,7 @@
 **/package-lock.json
 **/.env
 .idea
-api/api/**
+api/api/*.js
 ui/dist
 ui/public/*.js
 !ui/public/env.js
