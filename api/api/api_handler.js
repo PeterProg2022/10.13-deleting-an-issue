@@ -3,7 +3,7 @@ require('dotenv').config();
 var ApolloServer = require('apollo-server-express').ApolloServer;
 var path = require('path');
 var GraphQLDate = require('./sub/graphql_date');
-var about = require('../sub/about');
+var about = require('./sub/about');
 var issue = require('./sub/issue');
 var resolvers = {
     Query: {
