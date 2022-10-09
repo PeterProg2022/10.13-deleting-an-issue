@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",	/* https://github.com/tsconfig/bases */
+  "compilerOptions": {
+    "declaration": true,						/* Generate .d.ts files from TypeScript and JavaScript files in your project. */
+    "sourceMap": true,							/* Create source map files for emitted JavaScript files. */
+    "outDir": "./api",
+    "rootDir": "./src",
+    "lib": [
+      "dom"
+    ],
+    "module": "es6",
+    "target": "es5"
+  }
+}
