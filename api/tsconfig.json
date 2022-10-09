@@ -5,6 +5,7 @@
     "sourceMap": true,							/* Create source map files for emitted JavaScript files. */
     "outDir": "./api",
     "rootDir": "./src",
+    "allowJs": true,
     "lib": [
       "dom"
     ],

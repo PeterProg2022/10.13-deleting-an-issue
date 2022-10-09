@@ -1,42 +1,38 @@
-const fs = require('fs');
+var fs = require('fs');
 require('dotenv').config();
-const { ApolloServer } = require('apollo-server-express');
-
-const path = require('path');
-const GraphQLDate = require('./graphql_date');
-const about = require('./about');
-const issue = require('./issue');
-
-const resolvers = {
-  Query: {
-    about: about.getMessage,
-    issueList: issue.list,
-    issue: issue.get,
-  },
-  Mutation: {
-    setAboutMessage: about.setMessage,
-    issueAdd: issue.add,
-    issueUpdate: issue.update,
-    issueDelete: issue.delete,
-  },
-  GraphQLDate,
+var ApolloServer = require('apollo-server-express').ApolloServer;
+var path = require('path');
+var GraphQLDate = require('./graphql_date');
+var about = require('../api/about');
+var issue = require('./issue');
+var resolvers = {
+    Query: {
+        about: about.getMessage,
+        issueList: issue.list,
+        issue: issue.get,
+    },
+    Mutation: {
+        setAboutMessage: about.setMessage,
+        issueAdd: issue.add,
+        issueUpdate: issue.update,
+        issueDelete: issue.delete,
+    },
+    GraphQLDate: GraphQLDate,
 };
-
-const server = new ApolloServer({
-//  typeDefs: fs.readFileSync('schema.graphql', 'utf-8'),
-  typeDefs: fs.readFileSync(path.join(process.cwd(), 'schema.graphql'), 'utf-8'),
-  resolvers,
-  playground: true,
-  formatError: (error) => {
-    console.log(error);
-    return error;
-  },
+var server = new ApolloServer({
+    //  typeDefs: fs.readFileSync('schema.graphql', 'utf-8'),
+    typeDefs: fs.readFileSync(path.join(process.cwd(), 'schema.graphql'), 'utf-8'),
+    resolvers: resolvers,
+    playground: true,
+    formatError: function (error) {
+        console.log(error);
+        return error;
+    },
 });
-
 function installHandler(app) {
-  const enableCors = (process.env.ENABLE_CORS || 'true') === 'true';
-  console.log('CORS setting:', enableCors);
-  server.applyMiddleware({ app, path: '/graphql', cors: enableCors });
+    var enableCors = (process.env.ENABLE_CORS || 'true') === 'true';
+    console.log('CORS setting:', enableCors);
+    server.applyMiddleware({ app: app, path: '/graphql', cors: enableCors });
 }
-
-module.exports = { installHandler };
+module.exports = { installHandler: installHandler };
+//# sourceMappingURL=api_handler.js.map
