@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon -e js,graphql -w . -w .env api/server.js",
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
   },
   "repository": {
     "type": "git",
