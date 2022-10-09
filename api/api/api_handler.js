@@ -1,3 +1,4 @@
+"use strict";
 var fs = require('fs');
 require('dotenv').config();
 var ApolloServer = require('apollo-server-express').ApolloServer;

@@ -15,5 +15,5 @@ export function update(_: any, { id, changes }: {
 }): Promise<any>;
 declare function remove(_: any, { id }: {
     id: any;
-}): Promise<boolean>;
+}): Promise<boolean | undefined>;
 export { remove as delete };

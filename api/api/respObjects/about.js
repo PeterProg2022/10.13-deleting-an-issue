@@ -1,4 +1,6 @@
-var aboutMessage = 'Issue Tracker API v1.1';
+"use strict";
+var aboutMessage = 'Issue Tracker API v1.2';
+// @ts-ignore
 function setMessage(_, _a) {
     var message = _a.message;
     aboutMessage = message;

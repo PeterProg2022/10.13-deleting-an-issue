@@ -1,3 +1,4 @@
+"use strict";
 var GraphQLScalarType = require('graphql').GraphQLScalarType;
 var Kind = require('graphql/language').Kind;
 var GraphQLDate = new GraphQLScalarType({
