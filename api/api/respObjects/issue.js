@@ -35,7 +35,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 var UserInputError = require('apollo-server-express').UserInputError;
-var _a = require('./db'), getDb = _a.getDb, getNextSequence = _a.getNextSequence;
+var _a = require('../MongoDB/db'), getDb = _a.getDb, getNextSequence = _a.getNextSequence;
 function get(_, _a) {
     var id = _a.id;
     return __awaiter(this, void 0, void 0, function () {

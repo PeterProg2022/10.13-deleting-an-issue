@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 require('dotenv').config();
 var express = require('express');
-var connectToDb = require('./sub/db.js').connectToDb;
+var connectToDb = require('./MongoDB/db.js').connectToDb;
 var installHandler = require('./api_handler.js').installHandler;
 var app = express();
 installHandler(app);
