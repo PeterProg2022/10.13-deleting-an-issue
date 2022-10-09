@@ -1,0 +1,8 @@
+node_modules
+package-lock.json
+ui/public/*.js
+!ui/public/env.js
+ui/public/*.map
+.env
+ui/dist
+.idea
