@@ -3,6 +3,7 @@ const express = require('express');
 const { connectToDb } = require('./MongoDB/db.js');
 const { installHandler } = require('./api_handler.js');
 
+
 const app = express();
 
 installHandler(app);

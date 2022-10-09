@@ -6,3 +6,4 @@ ui/public/*.map
 .env
 ui/dist
 .idea
+api/api
