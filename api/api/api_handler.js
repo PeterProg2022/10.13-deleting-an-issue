@@ -22,7 +22,7 @@ var resolvers = {
 };
 var server = new ApolloServer({
     //  typeDefs: fs.readFileSync('schema.graphql', 'utf-8'),
-    typeDefs: fs.readFileSync(path.join(process.cwd(), 'schema.graphql'), 'utf-8'),
+    typeDefs: fs.readFileSync(path.join(process.cwd(), '', 'schema.graphql'), 'utf-8'),
     resolvers: resolvers,
     playground: true,
     formatError: function (error) {

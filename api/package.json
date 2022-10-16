@@ -4,7 +4,7 @@
   "description": "Pro MERN Stack (2nd Edition) API",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -e js,graphql -w . -w .env api/server.js",
+    "dev": "nodemon -e js,graphql -w . -w .env api/index.js",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "echo 'no build needed'"

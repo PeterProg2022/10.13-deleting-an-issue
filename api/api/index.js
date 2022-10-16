@@ -37,8 +37,8 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 require('dotenv').config();
 var express = require('express');
-var connectToDb = require('./MongoDB/db.js').connectToDb;
-var installHandler = require('./api_handler.js').installHandler;
+var connectToDb = require('./MongoDB/db').connectToDb;
+var installHandler = require('./api_handler').installHandler;
 var app = express();
 installHandler(app);
 var port = process.env.API_SERVER_PORT || 3000;
