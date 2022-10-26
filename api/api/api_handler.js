@@ -9,15 +9,15 @@ var issue = require('./respObjects/issue');
 var resolvers = {
     Query: {
         about: about.getMessage,
-        issueList: issue.list,
-        issue: issue.get,
+        // issueList: issue.list,
+        // issue: issue.get,
     },
-    Mutation: {
-        setAboutMessage: about.setMessage,
-        issueAdd: issue.add,
-        issueUpdate: issue.update,
-        issueDelete: issue.delete,
-    },
+    // Mutation: {
+    //     setAboutMessage: about.setMessage,
+    //     issueAdd: issue.add,
+    //     issueUpdate: issue.update,
+    //     issueDelete: issue.delete,
+    // },
     GraphQLDate: GraphQLDate,
 };
 var server = new ApolloServer({
